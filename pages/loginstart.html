@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>RaceHub Login</title>
+    <meta name="copyright" content="Copyright &copy; 2021 by racehub.io" />
+    <meta name="author" content="racehub.io, https://racehub.io" />
+
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/node_modules/firebaseui/dist/firebaseui.css"
+    />
+    <link type="text/css" rel="stylesheet" href="/pages/loginstart.css" />
+
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/node_modules/firebaseui/dist/firebaseui.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500&family=Work+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="/node_modules/firebase/firebase.js"></script>
+    <script src="/node_modules/firebaseui/dist/firebaseui.js"></script>
+    <script src="/scripts/webutils.js"></script>
+    <script src="/scripts/weblogin.js"></script>
+    <script src="/scripts/loginstart.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <img class="logo" src="/pages/icon.png" />
+      <div class="message">Welcome to <span class="logo">RaceHub</span></div>
+    </div>
+    <div id="firebaseui-auth-container"></div>
+    <div id="loader">Loading Firebase Login...</div>
+  </body>
+</html>

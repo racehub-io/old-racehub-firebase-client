@@ -1,0 +1,24 @@
+html,
+body {
+  height: 100%;
+}
+html {
+  display: table;
+  width: 100%;
+}
+body {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.logobox {
+  width: 50%;
+}
+.loader {
+  border: 16px solid #141a30;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-right: auto;
+  margin-left: auto;
+}

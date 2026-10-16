@@ -1,0 +1,52 @@
+{
+  "default-src": [
+    "'self'"
+  ],
+  "script-src": [
+    "'self'",
+    "'unsafe-eval'",
+    "*.google.com",
+    "*.firebaseapp.com",
+    "*.cloudfunctions.net",
+    "code.jquery.com",
+    "*.youtube.com",
+    "*.fbcdn.net",
+    "*.facebook.com",
+    "unpkg.com"
+  ],
+  "style-src": [
+    "'self'",
+    "'unsafe-inline'"
+  ],
+  "img-src": [
+    "'self'",
+    "*.gstatic.com",
+    "*.googleusercontent.com",
+    "*.githubusercontent.com",
+    "*.twimg.com",
+    "*.fbcdn.net",
+    "*.facebook.com"
+  ],
+  "font-src": [
+    "'self'",
+    "*.googleapis.com",
+    "*.gstatic.com",
+    "*.fbcdn.net"
+  ],
+  "connect-src": [
+    "'self'",
+    "*.google.com",
+    "*.googleapis.com",
+    "*.firebaseapp.com",
+    "*.youtube.com",
+    "*.facebook.com",
+    "https://*.cloudfunctions.net"
+  ],
+  "frame-src": [
+    "'self'",
+    "*.google.com",
+    "*.googleapis.com",
+    "*.firebaseapp.com",
+    "*.facebook.com"
+  ]
+}

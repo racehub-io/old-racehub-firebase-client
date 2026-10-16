@@ -1,0 +1,47 @@
+{
+  "name": "racehub-firebase-client",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "set-env": "set \"INLINE_RUNTIME_CHUNK=false\"",
+    "build:dev": "npm run set-env && webpack  --mode=development --config ./config/webpack.config.js",
+    "build:prod": "npm run set-env && webpack --mode=production --config ./config/webpack.config.js",
+    "rebuild": "./node_modules/.bin/electron-rebuild",
+    "deploy": "node ./config/firebase-deploy.js",
+    "start": "npm run build:dev && electron-webpack dev",
+    "build": "npm run build:prod && electron-webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@racehub-io/f1-telemetry-client": "^0.2.6",
+    "core-js": "^3.6.5",
+    "lodash": "^4.17.21",
+    "nanoid": "^3.1.30",
+    "parquets": "^0.10.10",
+    "racehub-electron-firebase": "file:../old-racehub-client-firebase",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "regenerator-runtime": "^0.13.9",
+    "firebase": "^8.4.1",
+    "firebaseui": "^4.8.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.7",
+    "electron-webpack": "^2.8.2",
+    "mini-css-extract-plugin": "^1.6.2",
+    "sass-loader": "^10.2.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "electron": "^12.0.4"
+  }
+}
